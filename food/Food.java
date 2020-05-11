@@ -31,7 +31,7 @@ public class Food {
     
 
     public String toString(){
-        return "Name : "+name+",\n"+
+        return "Name : "+name+", "+
         "Price : "+price;
     }
 }

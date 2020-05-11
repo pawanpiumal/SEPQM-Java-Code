@@ -26,10 +26,10 @@ public class Condiments extends Beverages{
 
     @Override
     public String toString(){
-        return "Name : "+name+",\n"+
-        "Price : "+price+",\n"+
-        "Ingredients : "+ingredients+",\n+"+
-        "Condiments : "+condiments.toString();
+        return "Name : "+name+", "+
+        "Price : "+price+", "+
+        "Ingredients : "+ingredients+", "+
+        "Condiments : "+condiments.getName();
     }
 
 }

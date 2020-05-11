@@ -23,8 +23,8 @@ public class Drinks extends Food{
     }
 
     public String toString(){
-        return "Name : "+name+",\n"+
-        "Price : "+price+",\n"+
+        return "Name : "+name+", "+
+        "Price : "+price+", "+
         "Size : "+size;
     }
     
