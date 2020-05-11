@@ -1,26 +1,25 @@
 package food.condiments;
 
-import java.util.List;
-
+import food.Food;
 import food.beverages.Beverages;
 
 public class Condiments extends Beverages{
 
-    private List<String> condiments;
+    private Food condiments;
 
     public Condiments(){
 
     }
 
-    public Condiments(String name, float price, List<String> ingrediets, List<String> condiments){
+    public Condiments(String name, float price, String ingrediets, Food condiments){
         super(name,price, ingrediets);
         this.condiments = condiments;
     }
 
-    public List<String> getCondiments(){
+    public Food getCondiments(){
         return condiments;
     }
-    public Condiments setCondiments(List<String> condiments){
+    public Condiments setCondiments(Food condiments){
         this.condiments = condiments;
         return this;
     }
@@ -29,7 +28,7 @@ public class Condiments extends Beverages{
     public String toString(){
         return "Name : "+name+",\n"+
         "Price : "+price+",\n"+
-        "Ingredients : "+ingredients.toString()+",\n+"+
+        "Ingredients : "+ingredients+",\n+"+
         "Condiments : "+condiments.toString();
     }
 
