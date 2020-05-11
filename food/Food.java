@@ -7,12 +7,10 @@ public class Food {
 
     public Food(){
     }
-
     public Food(String name,float price){
         this.name = name;
         this.price = price;
     }
-    
     public String getName(){
         return name;
     }
@@ -27,8 +25,6 @@ public class Food {
         this.price=price;
         return this;
     }
-    
-
     public String toString(){
         return "Name : "+name+", "+
         "Price : "+price;

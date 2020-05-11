@@ -3,13 +3,11 @@ package food.beverages;
 import food.Food;
 
 public class Beverages extends Food{
-    
     protected String ingredients;
 
     public Beverages(){
         super();
     }
-
     public Beverages(String name,float price,String ingrediets){
         super(name,price);
         this.ingredients = ingrediets;
@@ -29,6 +27,4 @@ public class Beverages extends Food{
         "Price : "+price+", "+
         "Ingredients : "+ingredients;
     }
-
-
 }
