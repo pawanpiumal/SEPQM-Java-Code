@@ -19,7 +19,7 @@ public class Beverages extends Food{
     public List<String> getIngredients(){
         return ingredients;
     }
-    public Food setIngredients(List<String> ingredients) {
+    public Beverages setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
         return this;
     }

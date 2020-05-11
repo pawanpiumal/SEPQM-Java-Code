@@ -29,13 +29,17 @@ public class MealsImpl implements Meals {
             meal.add(sprite);
             meal.add(fishBurger);
         }else if(mealName.equals("Vege Burger with spices and Water")){
-            Food VegeBurger = new Condiments();
             List<String> ingredients = new ArrayList<>();
             ingredients.add("Vegetables");
             List<String> condiments = new ArrayList<>();
             condiments.add("Spice");
-            VegeBurger.setName("Vege Burger").setPrice(50)
-            VegeBurger.setIngredients(ingredients).setCondiments(condiments);
+            meal.add(new Condiments().setCondiments(condiments).setIngredients(ingredients).setName("Vege Burger").setPrice(50));
+            meal.add(new Drinks().setSize(100).setName("Water").setPrice(40));
+        } else if(mealName.equals("Egg Burger and Pepsi")){
+            List<String> ingredients = new ArrayList<>();
+            ingredients.add("Egg");
+            meal.add(new Beverages().setIngredients(ingredients).setName("Egg Burger").setPrice(70));
+            meal.add(new Drinks().setSize(100).setName("Pepsi").setPrice(80));
         }
         return meal;
     }

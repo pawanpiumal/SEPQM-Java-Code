@@ -6,7 +6,7 @@ public class Food {
     protected float price;
 
     public Food(){
-        
+
     }
 
     public Food(String name,float price){

@@ -9,7 +9,7 @@ public class Condiments extends Beverages{
     private List<String> condiments;
 
     public Condiments(){
-        
+
     }
 
     public Condiments(String name, float price, List<String> ingrediets, List<String> condiments){
