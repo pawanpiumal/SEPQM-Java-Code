@@ -8,7 +8,7 @@ public class Condiments extends Beverages{
     private Food condiments;
 
     public Condiments(){
-
+        super();
     }
 
     public Condiments(String name, float price, String ingrediets, Food condiments){

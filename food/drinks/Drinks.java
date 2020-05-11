@@ -7,7 +7,7 @@ public class Drinks extends Food{
     private float size;
 
     public Drinks(){
-
+        super();
     }
     public Drinks(String name,float price,float size){
         super(name,price);
