@@ -3,9 +3,9 @@ package food;
 import java.util.ArrayList;
 import java.util.List;
 
-import food.beverages.Beverages;
 import food.condiments.Condiments;
 import food.drinks.Drinks;
+import food.snacks.Snacks;
 
 public class MealsImpl implements Meals {
 
@@ -21,7 +21,7 @@ public class MealsImpl implements Meals {
             meal.add(sauce);
         }else if(mealName.equals("Fish Burger and Sprite")){
             Food sprite = new Drinks("sprite",80,250);
-            Food fishBurger = new Beverages("Fish Burger", 100,"Fish");
+            Food fishBurger = new Snacks("Fish Burger", 100,"Fish");
             meal.add(sprite);
             meal.add(fishBurger);
         }else if(mealName.equals("Vege Burger with spices and Water")){
@@ -30,7 +30,7 @@ public class MealsImpl implements Meals {
             meal.add(new Drinks().setSize(100).setName("Water").setPrice(40));
             meal.add(spice);
         } else if(mealName.equals("Egg Burger and Pepsi")){
-            meal.add(new Beverages().setIngredients("Egg").setName("Egg Burger").setPrice(70));
+            meal.add(new Snacks().setIngredients("Egg").setName("Egg Burger").setPrice(70));
             meal.add(new Drinks().setSize(100).setName("Pepsi").setPrice(80));
         }
         return meal;

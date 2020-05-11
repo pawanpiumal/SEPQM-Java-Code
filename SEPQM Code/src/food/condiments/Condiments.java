@@ -1,9 +1,9 @@
 package food.condiments;
 
 import food.Food;
-import food.beverages.Beverages;
+import food.snacks.Snacks;
 
-public class Condiments extends Beverages{
+public class Condiments extends Snacks{
 
     private Food condiments;
 

@@ -1,14 +1,14 @@
-package food.beverages;
+package food.snacks;
 
 import food.Food;
 
-public class Beverages extends Food{
+public class Snacks extends Food{
     protected String ingredients;
 
-    public Beverages(){
+    public Snacks(){
         super();
     }
-    public Beverages(String name,float price,String ingrediets){
+    public Snacks(String name,float price,String ingrediets){
         super(name,price);
         this.ingredients = ingrediets;
     }
@@ -16,7 +16,7 @@ public class Beverages extends Food{
     public String getIngredients(){
         return ingredients;
     }
-    public Beverages setIngredients(String ingredients) {
+    public Snacks setIngredients(String ingredients) {
         this.ingredients = ingredients;
         return this;
     }
